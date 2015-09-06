@@ -1,0 +1,12 @@
+package leetcode;
+
+public class RemoveDuplicatesfromSortedArray2 {
+    public int removeDuplicates(int[] A) {
+        
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

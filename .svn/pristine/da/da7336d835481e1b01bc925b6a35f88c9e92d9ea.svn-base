@@ -1,0 +1,39 @@
+package leetcode;
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class RotateList {
+    public ListNode rotateRight(ListNode head, int n) {
+    	if(head==null) return null;
+        ListNode pointer = head;
+        for(int i=1;i<n;i++){
+        	if(pointer.next==null){
+        		return null;
+        	}else{
+        		pointer=pointer.next;
+        	}
+        }
+        ListNode newHead = head;
+        while(pointer.next!=null){
+        	newHead = newHead.next;
+        	pointer = pointer.next;
+        }
+        pointer.next=head;
+        return newHead;
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

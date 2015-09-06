@@ -1,0 +1,27 @@
+package leetcode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UniqueBinarySearchTrees2 {
+	
+	private List<TreeNode> createTrees(int start,int end){
+		List<TreeNode> results = new ArrayList<TreeNode>();
+		if(start>end){
+			results.add(null);
+			return results;
+		}
+		for(int i=start;i<=end;i++){
+			List<TreeNode> left = createTrees(start,i-1);
+			List<TreeNode> right = createTrees(i+1,end);
+		}
+	}
+    public List<TreeNode> generateTrees(int n) {
+        
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

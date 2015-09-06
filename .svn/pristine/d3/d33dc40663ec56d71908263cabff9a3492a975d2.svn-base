@@ -1,11 +1,11 @@
 package leetcode;
 
-public class ConvertSortedListtoBinarySearchTree {
-    public TreeNode sortedListToBST(ListNode head) {
-		return null;
-
+public class NextPermutation {
+	
+    public void nextPermutation(int[] num) {
         
     }
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
